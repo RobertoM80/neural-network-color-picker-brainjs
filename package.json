@@ -1,0 +1,14 @@
+{
+  "name": "brain-js-color-picker",
+  "version": "1.0.0",
+  "description": "A color picker and text color neural network guesser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "brain.js": "^1.4.2"
+  }
+}

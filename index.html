@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5 mb-3">NEURAL NETWORK COLOR PICKER</h1>
+        <p class="text-center mb-5">Different backgrounds require different color text to be best
+            redable.
+            Let's try and see if our neural network can learn to chose wich text color is better to use for the
+            selected background, if black or white.</p>
+        <div class="color-picker-container pb-5">
+            <div class="row">
+                <div class="col-sm-4 d-flex flex-column
+                 justify-content-center align-items-center">
+                    <div>
+                        <input type="color" id="head" name="color" value="#e66445" />
+                        <label for="head">Head</label>
+                    </div>
+                    <button id="updateToBrain type=" button" class="btn btn-success mb-3">Activate training</button>
+                </div>
+                <div class="col-sm-8">
+                    <div class="card card-free-choice w-100">
+                        <div class="card-body">
+                            <h3 class="m-5 text-center card-free-choice__text">Some random text.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="text-center mt-5">Trainer</h1>
+        <h5 class="text-center mb-5">Begin the training selecting the box more redable to you. <br> More training
+            means more lerning for the network.</h5>
+        <div class="colors-container">
+            <div class="row">
+                <div class="col box">
+                    <div id="card-dark" class="card card-dark w-100">
+                        <div class="card-body">
+                            <h3 class="m-5 text-center card-dark__text">Some text.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col box">
+                    <div id="card-bright" class="card card-bright w-100">
+                        <div class="card-body">
+                            <h3 class="m-5 text-center card-bright__text">Some text.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-5"></div>
+        <div class="my-5"></div>
+    </div>
+    <script src="./brain-browser.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

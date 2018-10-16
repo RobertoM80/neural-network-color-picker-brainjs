@@ -1,0 +1,21 @@
+.card-dark,
+.card-bright {
+  cursor: pointer;
+}
+
+body {
+  background: rgb(240, 249, 253);
+}
+
+body * {
+  box-sizing: border-box;
+  color: rgb(53, 53, 53);
+}
+
+.card {
+  margin-bottom: 50px;
+}
+
+.card:hover {
+  border: 1px solid rgb(116, 33, 33);
+}
